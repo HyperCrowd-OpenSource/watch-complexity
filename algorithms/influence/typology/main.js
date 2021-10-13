@@ -13,10 +13,10 @@ const {
 function influence(edges) {
   // Get the number of edges
   const num_of_edges = edges.length;
-  if (num_of_edges < 20) throw Error('Too few edges');
+//  if (num_of_edges < 20) throw Error('Too few edges');
   // Calculate in and out degree for every node
   const { nodes, num_of_nodes } = in_out_degree(edges);
-  if (num_of_nodes < 20) throw Error('Too few nodes');
+//  if (num_of_nodes < 20) throw Error('Too few nodes');
   // Calculate network measurements necessary for influence role detection
   const { means, potential_mean, maxdegree, boxmeans } = network_statistics(nodes, num_of_nodes);
   // Calulate for every node its influence role
